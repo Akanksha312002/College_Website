@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar from '../components/NavBar'
+import NavBar from '../components/MainNavBar'
 
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -34,30 +34,28 @@ const facilitiesData = [
 const CampusFacilites = () => {
   return (
     <div className='page-background'>
-      <NavBar />
+     
 
       <Carousel>
         <Carousel.Item>
-          <img src={slider4} className='image1' />
+          <img src={slider5} className='image1' alt=""/>
           <Carousel.Caption>
             <h1 className='heading'>Our Beautiful Campus</h1>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p className='para'>"Where every path leads to knowledge and every corner tells a story."</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img src={slider5} className='image1' />
+          <img src={slider4} className='image1' alt=""/>
           <Carousel.Caption>
-            <h3></h3>
-            <p> </p>
+          <h1 className='heading'>Our Beautiful Campus</h1>
+          <p className='para'>"Where every path leads to knowledge and every corner tells a story."</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img src={slider7} className='image1' />
+          <img src={slider7} className='image1'alt="" />
           <Carousel.Caption>
-            <h3></h3>
-            <p>
-
-            </p>
+          <h1 className='heading1'>Our Beautiful Campus</h1>
+          <p className='para'>"Where every path leads to knowledge and every corner tells a story."</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
