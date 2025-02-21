@@ -1,41 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 
 
-.navbar-div{
-  margin:auto;
-}
-.heading{
-  color: rgb(0, 0, 0)
-  
-  
-  
-}
+
+
+/* CSS FOR CAMPUS FACILITIES PAGE */
+
 .image1{
   width:100%;
   height: 20%;
 }
 
 .page-background{
-  background-color: #618eb6;
+  
   
 }
 
+.heading{
+  color: rgb(18, 1, 1);
+  font-family: 'Croissant One', sans-serif;
+  line-height: 1.3;
+  
+  font-size: 3rem; /* Adjust based on responsiveness */
+  font-weight: 700; /* Bold */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+.heading1{
+  font-family: 'Croissant One', sans-serif;
+  line-height: 1.3;
+  
+  font-size: 3rem; /* Adjust based on responsiveness */
+  font-weight: 700; /* Bold */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.para{
+  font-size: 1.3rem;
+    font-weight: 400;
+    color: #f8f9fa; /* Light color for contrast */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.5px;
+}
 
 .facilities-container {
   text-align: center;
   padding: 40px;
-  background-color: #f5f5f5;
+  /*background-color: #F5F5DC;*/
+  background: linear-gradient(to left, #0A1F50, #4A60A1);
 }
 
 .facilities-container h1 {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: #f4f7f9;
+  font-family: "Croissant One", serif;
+
 }
 
 .facilities-container p {
   font-size: 1.2rem;
-  color: #555;
+  color: #f4f7f9;
   margin-bottom: 30px;
+  font-family: "Croissant One", serif;
 }
 
 .facilities-grid {
@@ -70,22 +94,28 @@
 
 .facility-info h3 {
   font-size: 1.5rem;
-  color: #333;
+  color: #050000;
+  font-family: "Croissant One", serif;
 }
 
 .facility-info p {
   font-size: 1rem;
-  color: #666;
+  
+  font-family: 'Georgia', sans-serif;
+  font-size: 16px; 
+    line-height: 1.3;
+    color: #0a0f69;
 }
 
 /* CSS FOR NEWS AND EVENTS PAGE */
 
-body {
+.news-page {
   font-family: Arial, sans-serif;
-  margin: 0 auto;
-  padding: 0 50px;
+  margin: 0;
+  padding: 0 ;
   
-  background-color: #FFF4E6;
+  /*background-color: #FFF4E6;*/
+  background: linear-gradient(to left, #0A1F50, #4A60A1);
 }
 
 /* 🔹 Heading at the top */
@@ -93,7 +123,7 @@ body {
  
  
   text-align: center;
-  color: #2a3f5f;
+  color: #f7f8fa;
   margin: 20px 0;
   margin-left:50px;
   
@@ -208,3 +238,179 @@ body {
   font-weight: bold;
 }
 
+
+/* CSS FOR NAVBAR PAGE */
+
+/* NAVBAR STYLES */
+.main-navbar-div {
+  width: 100%;
+  background-color: #050553;
+  padding: 1px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.main-navbar-div .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.main-navbar-div .logo {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.main-navbar-div .center-text {
+  text-align: center;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+
+.main-navbar-div .nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 3px;
+  background-color: #fffafa;
+  list-style: none;
+}
+
+.main-navbar-div .nav-list li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.main-navbar-div .nav-list a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.main-navbar-div .nav-list a:hover {
+  color: #050553;
+}
+
+/* CSS FOR FOOTER PAGE */
+footer {
+  background: #000957;
+  color: white;
+  padding: 1rem 0;
+  position: relative;
+  z-index: 10;
+  font-family: "Arial", sans-serif;
+}
+
+/* Footer Container */
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  font-size: 0.875rem;
+}
+
+/* Footer Headings */
+footer h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  font-family: "Cinzel Decorative", serif;
+  font-style: italic;
+}
+
+footer h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer Text */
+footer p {
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Footer Links */
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+footer ul li a:hover {
+  color: #FFC600;
+}
+
+/* Newsletter Section */
+footer .newsletter {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #FFC600;
+  padding-bottom: 0.5rem;
+}
+
+footer .newsletter input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+footer .newsletter button {
+  color: #FFC600;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+footer .newsletter button:hover {
+  color: #FFC600;
+}
+
+/* Social Media Icons */
+footer .social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+footer .social-icons a {
+  font-size: 2rem;
+  color: rgb(15, 103, 197);
+  transition: color 0.3s ease-in-out;
+}
+
+footer .social-icons a:hover {
+  color: #FFC600;
+}
+
+/* Footer Bottom */
+footer .footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  border-top: 1px solid gray;
+  padding-top: 1rem;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
