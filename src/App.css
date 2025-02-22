@@ -419,66 +419,66 @@ footer .footer-bottom {
 /* PLACEMENTS PAGE CSS*/
 
 
-
 .placements-page {
   font-family: Arial, sans-serif;
-  padding: 20px;
+  
   background-color: #f4f4f4;
   text-align: center;
   overflow: visible; /* Allow content to extend */
   min-height: 100vh;
 }
 
-.hero-section {
+/* Full-screen background image */
+.hero-banner {
+  width: 100vw;
+  height: 90vh; /* Reduce height */
+  background: url("./images/Placements/placement.jpg") no-repeat center center;
+  background-size: cover;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 50px; /* Ensure it's below the hero banner */
-  padding: 50px 20px;
-  border: 2px solid rgb(11, 9, 9);
-
+  justify-content: center;
+  position: relative; /* Instead of absolute */
+  z-index: 1;
 }
 
-.hero-text {
-  flex: 1;
-  text-align: left;
-  padding-right: 20px;
-}
-
-.hero-text h1 {
-  font-size: 2rem;
-  color: #333;
-}
-
-.hero-text p {
-  font-size: 1rem;
-  color: #666;
-  margin: 10px 0;
-}
-
-.counter {
-  margin-top: 20px;
-  font-size: 1.5rem;
+/* Semi-transparent black overlay */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8); /* Black with 60% opacity */
+  color: white;
+  font-family: "Georgia", serif;
   font-weight: bold;
-  color: #1e88e5;
+  padding: 40px;
+  text-align: center;
+  max-width: 70%;
+  border-radius: 10px;
 }
 
-.hero-image {
-  width: 40%;
-  border-radius: 10px;
+/* Adjust text style */
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 25px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 .companies-section {
   margin-top: 40px;
+  margin-bottom: 40px;
   background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border: 2px solid rgb(13, 13, 21);
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.1);
+  border: 3px solid rgb(13, 13, 21);
+
+}
+
+.companies-section h2{
+  font-size: 45px;
+  font-weight: bolder;
+  font-family: serif;
 
 }
 
@@ -524,40 +524,56 @@ body, html {
   overflow-y: auto; /* Ensure vertical scrolling */
 }
 
-/* Full-screen background image */
-.hero-banner {
-  width: 96vw;
-  height: 100vh; /* Reduce height */
-  background: url("./images/Placements/placement.jpg") no-repeat center center;
-  background-size: cover;
+
+
+.placement-container {
+  margin-top: 40px;
+  text-align: center;
+  padding: 40px;
+  background-color: #ffffff;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border: 3px solid rgb(13, 13, 21);
+}
+
+.placement-title {
+  font-size: 50px;
+  font-weight:bolder; /* Make title bolder */
+  color: #222;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative; /* Instead of absolute */
-  z-index: 1;
+  gap: 8px;
+  font-family: serif;
 }
 
-/* Semi-transparent black overlay */
-.overlay {
-  background-color: rgba(0, 0, 0, 0.8); /* Black with 60% opacity */
-  color: white;
+.placement-title i {
+  font-size: 24px; /* Adjust icon size */
+  color: #444;
+}
+
+.placement-description {
+  font-size: 20px;
+  font-weight: 400;
+  color: #555;
+  margin-top: 8px;
   font-family: "Georgia", serif;
   font-weight: bold;
-  padding: 40px;
-  text-align: center;
-  max-width: 70%;
-  border-radius: 10px;
 }
 
-/* Adjust text style */
-.overlay h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+.placement-stats {
+  font-size: 34px;
+  font-weight: 600;
+  text-decoration:solid;
+  color: #007bff;
+  margin-top: 12px;
 }
 
-.overlay p {
-  font-size: 1.2rem;
-  line-height: 1.5;
+.placement-check {
+  font-size: 40px; /* Decrease the size */
+  color: #007bff;
+  margin-top: 16px;
 }
 
 
