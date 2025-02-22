@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoimg from "./../images/logo.png";
-import logo2 from "./../images/logo1.png"; // Second logo
+import logoimg from "./../images/NavBar/logo.png";
+import logo2 from "./../images/NavBar/logo1.png"; // Second logo
 
 const MainNavBar = () => {
   return (

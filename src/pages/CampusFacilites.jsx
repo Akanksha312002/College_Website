@@ -1,23 +1,22 @@
 import React from 'react'
-import NavBar from '../components/MainNavBar'
 
 import Carousel from 'react-bootstrap/Carousel';
 
 
 
-import slider4 from "./../images/slid-img4.jpg"
-import slider5 from "./../images/slid_img5.jpg"
-import slider7 from "./../images/slid-img7.jpg"
+import slider4 from "./../images/CampusFacilities/slid-img4.jpg"
+import slider5 from "./../images/CampusFacilities/slid_img5.jpg"
+import slider7 from "./../images/CampusFacilities/slid-img7.jpg"
 
-import library from "./../images/library.jpg"
-import sport from "./../images/sport.jpg"
-import hostel from "./../images/hostel.jpeg"
-import canteen from "./../images/canteen.jpg"
-import techlab from "./../images/techcentre.png"
-import auditorium from "./../images/auditorium.jpg"
-import building from "./../images/buildings.jpeg"
-import research from "./../images/research_lab.jpg"
-import laboratory from "./../images/laboratory.jpeg"
+import library from "./../images/CampusFacilities/library.jpg"
+import sport from "./../images/CampusFacilities/sport.jpg"
+import hostel from "./../images/CampusFacilities/hostel.jpeg"
+import canteen from "./../images/CampusFacilities/canteen.jpg"
+import techlab from "./../images/CampusFacilities/techcentre.png"
+import auditorium from "./../images/CampusFacilities/auditorium.jpg"
+import building from "./../images/CampusFacilities/buildings.jpeg"
+import research from "./../images/CampusFacilities/research_lab.jpg"
+import laboratory from "./../images/CampusFacilities/laboratory.jpeg"
 const facilitiesData = [
   { id: 1, image: library, title: 'Library', description: 'A well-equipped library with digital and print resources.' },
   { id: 2, image: sport, title: 'Sports Complex', description: 'State-of-the-art sports facilities.' },
