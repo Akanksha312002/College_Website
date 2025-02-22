@@ -10,6 +10,7 @@ import NewsAndEventsPage from './pages/NewsAndEventsPage';
 import { Navbar } from 'react-bootstrap';
 import MainNavBar from './components/MainNavBar';
 import Footer from './components/Footer';
+import Placements from "./pages/Placements";
 
 function App() {
   return (
@@ -19,8 +20,8 @@ function App() {
         <Route path='/newsevent' element={<NewsAndEventsPage/>}/>
         <Route path='/campusfacilities' element={<CampusFacilites />} />
         <Route path='/home' element={<HomePage />} />
-
-        <Route path='/aboutus' element={<AboutUs />} />
+        <Route path='/placements' element={<Placements/>} />
+       <Route path='/aboutus' element={<AboutUs />} />
 
 
       </Routes>

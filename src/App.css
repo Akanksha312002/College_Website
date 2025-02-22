@@ -414,3 +414,152 @@ footer .footer-bottom {
   font-size: 0.875rem;
   opacity: 0.8;
 }
+
+
+/* PLACEMENTS PAGE CSS*/
+
+
+
+.placements-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  overflow: visible; /* Allow content to extend */
+  min-height: 100vh;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px; /* Ensure it's below the hero banner */
+  padding: 50px 20px;
+  border: 2px solid rgb(11, 9, 9);
+
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+.counter {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e88e5;
+}
+
+.hero-image {
+  width: 40%;
+  border-radius: 10px;
+}
+
+.companies-section {
+  margin-top: 40px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(13, 13, 21);
+
+}
+
+.company-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.company {
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10%;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.company img {
+  width: 100px;
+  height: auto;
+}
+
+.company p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #444;
+  font-weight: bold;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  min-height: 100vh; /* Change height to min-height */
+  overflow-x: hidden;
+  overflow-y: auto; /* Ensure vertical scrolling */
+}
+
+/* Full-screen background image */
+.hero-banner {
+  width: 96vw;
+  height: 100vh; /* Reduce height */
+  background: url("./images/Placements/placement.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Instead of absolute */
+  z-index: 1;
+}
+
+/* Semi-transparent black overlay */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8); /* Black with 60% opacity */
+  color: white;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  padding: 40px;
+  text-align: center;
+  max-width: 70%;
+  border-radius: 10px;
+}
+
+/* Adjust text style */
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+
+
+
