@@ -112,7 +112,8 @@
 .news-page {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0 ;
+  padding-top: 25px ;
+  padding-bottom: 25px;
   
   /*background-color: #FFF4E6;*/
   background: linear-gradient(to left, #0A1F50, #4A60A1);
@@ -120,18 +121,22 @@
 
 /* 🔹 Heading at the top */
 .main-heading {
- 
- 
+  
   text-align: center;
   color: #f7f8fa;
-  margin: 20px 0;
-  margin-left:50px;
   
-  margin-top: 40px;
+  
+  margin-left: 50px;
   font-family: "Croissant One", serif;
   font-size: 40px;
   font-weight: 800;
   font-style: normal;
+
+  font-size: 2.5rem; /* Large heading */
+  font-weight: bold;
+  
+  margin: 0;
+  font-family: "Cinzel Decorative", serif; /* Decorative font for the heading */
 }
 
 .para {
@@ -140,6 +145,7 @@
   font-size:20px;
   margin-left:40px;
   margin-bottom: 50px;
+  margin-top: 20px;
 }
 /* 🔹 Flexbox layout for sidebar & news */
 .content {

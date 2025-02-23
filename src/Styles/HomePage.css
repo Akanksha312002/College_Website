@@ -211,13 +211,13 @@ body {
   margin-bottom: 2rem; /* Add space below the heading */
 }
 
-.main-heading {
-  font-size: 2.5rem; /* Large heading */
+/*.main-heading {
+  font-size: 2.5rem; /* Large heading 
   font-weight: bold;
-  color: #1c060f; /* Dark gray for strong contrast */
+  color: #1c060f; /* Dark gray for strong contrast 
   margin: 0;
-  font-family: "Cinzel Decorative", serif; /* Decorative font for the heading */
-}
+  font-family: "Cinzel Decorative", serif; /* Decorative font for the heading 
+}*/
 
 .sub-heading {
   font-size: 1.2rem; /* Smaller subtitle */

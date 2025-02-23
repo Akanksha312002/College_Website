@@ -1,4 +1,5 @@
 import React from "react";
+import "../../src/Styles/HomePage.css";
 import { Link } from "react-router-dom";
 import logoimg from "./../images/NavBar/logo.png";
 import logo2 from "./../images/NavBar/logo1.png"; // Second logo
@@ -7,7 +8,9 @@ const MainNavBar = () => {
   return (
     <div className="main-navbar-div">
        <div className="navbar">
-      <img src={logoimg} alt="Logo" className="logo" />
+        <Link to="/">
+              <img src={logoimg} alt="Logo" className="logo" />
+        </Link>
         <div className="center-text">
           <h2>SGM College Karad</h2>
           <h6 className="sub-text">Education through self-help is our main motto</h6>

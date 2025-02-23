@@ -1,5 +1,7 @@
 import { FaFacebookF, FaTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import "../../src/Styles/HomePage.css";
+
 
 const Footer = () => {
   return (
@@ -7,10 +9,13 @@ const Footer = () => {
       <div className="container mx-auto px-6 grid md:grid-cols-4 gap-8 text-sm">
         {/* Left Section */}
         <div>
-          <h2 className="text-3xl font-extrabold tracking-widest font-serif italic">
-            S<span className="font-sans">GM</span>
+          <Link to="/"className="text-white decoration-none">
+          <h2 className="text-3xl font-extrabold tracking-widest font-serif italic ">
+            <span className="font-sans">SGM</span>
           </h2>
+          </Link>
           <p className="mt-2">Sadguru Gadge Maharaj College,<br/> Motto : Education through self-help</p>
+          
         </div>
 
         {/* Office Section */}
@@ -46,10 +51,10 @@ const Footer = () => {
 
           {/* Social Media Icons */}
           <div className="flex items-center justify-start space-x-6 mt-6 social-icons">
-            <a href="#" className="text-3xl md:text-4xl hover:text-gray-400"><FaFacebookF /></a>
-            <a href="#" className="text-3xl md:text-4xl hover:text-gray-400"><FaTwitter /></a>
-            <a href="#" className="text-3xl md:text-4xl hover:text-gray-400"><FaInstagram /></a>
-            <a href="#" className="text-3xl md:text-4xl hover:text-gray-400"><FaWhatsapp /></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-3xl md:text-4xl hover:text-gray-400"><FaFacebookF /></a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="text-3xl md:text-4xl hover:text-gray-400"><FaTwitter /></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-3xl md:text-4xl hover:text-gray-400"><FaInstagram /></a>
+            <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" className="text-3xl md:text-4xl hover:text-gray-400"><FaWhatsapp /></a>
           </div>
         </div>
       </div>

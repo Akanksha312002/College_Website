@@ -11,17 +11,20 @@ import { Navbar } from 'react-bootstrap';
 import MainNavBar from './components/MainNavBar';
 import Footer from './components/Footer';
 import Placements from "./pages/Placements";
+import Department from "./pages/Department";
 
 function App() {
   return (
     <BrowserRouter>
     <MainNavBar/>
       <Routes>
+        <Route path='/' element={<HomePage/>}/>
         <Route path='/newsevent' element={<NewsAndEventsPage/>}/>
         <Route path='/campusfacilities' element={<CampusFacilites />} />
-        <Route path='/home' element={<HomePage />} />
         <Route path='/placements' element={<Placements/>} />
-       <Route path='/aboutus' element={<AboutUs />} />
+        <Route path="/about" element={<AboutUs/>}/>
+        <Route path="/department" element={<Department/>}/>
+       
 
 
       </Routes>
