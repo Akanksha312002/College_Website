@@ -119,7 +119,7 @@ const NewsAndEventsPage = () => {
       );
   return (
     <div className="news-page">
-    <h1 className="main-heading">Beyond The Books: College Buzz</h1>
+    <h1 className="main-heading">COLLEGE DIARIES : NEWS AND UPDATES</h1>
     <p className="para">"More Than Just Academics—Bringing You The Latest Buzz From Campus!!"</p>
 
     {/* 🔹 Flex container for sidebar and news section */}
