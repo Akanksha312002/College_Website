@@ -12,6 +12,8 @@ import MainNavBar from './components/MainNavBar';
 import Footer from './components/Footer';
 import Placements from "./pages/Placements";
 import Department from "./pages/Department";
+import VirtualTour from "./pages/VirtualTour";
+import KeyBuildings from "./pages/KeyBuildings";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path='/placements' element={<Placements/>} />
         <Route path="/about" element={<AboutUs/>}/>
         <Route path="/department" element={<Department/>}/>
+        <Route path="/virtualtour" element={<VirtualTour/>}/>
+        <Route path="/buildings" element={<KeyBuildings/>}/>
        
 
 

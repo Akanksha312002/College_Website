@@ -32,7 +32,7 @@ const Footer = () => {
           </h3>
           <ul className="mt-2 space-y-1">
      <li><Link to="/services" className="hover:underline transition duration-300">Services</Link></li>
-     <li><Link to="/campusfacilities" className="hover:underline transition duration-300">Campus Facilities</Link></li>
+     <li><Link to="/virtualtour" className="hover:underline transition duration-300">Campus</Link></li>
      <li><Link to="/placements" className="hover:underline transition duration-300">Placements</Link></li>
 
     <li><Link to="/about-us" className="hover:underline transition duration-300">About Us</Link></li>
