@@ -123,7 +123,7 @@ const NewsAndEventsPage = () => {
     <p className="para">"More Than Just Academics—Bringing You The Latest Buzz From Campus!!"</p>
 
     {/* 🔹 Flex container for sidebar and news section */}
-    <div className="content">
+    <div style={{display:'flex',gap:'20px',padding:'0 20px',background:'linear-gradient(to left,#0A1F50,#4A60A1'}}>
       {/* Sidebar Section */}
       <div className="sidebar">
         <h2>News</h2>

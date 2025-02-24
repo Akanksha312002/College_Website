@@ -64,6 +64,9 @@ body {
 .main-navbar-div .nav-list a:hover {
   color: #050553;
 }
+
+
+/*HOME PAGE CSS*/
 .carousel-caption {
   bottom: 30%;
   text-align: center;
@@ -211,13 +214,13 @@ body {
   margin-bottom: 2rem; /* Add space below the heading */
 }
 
-/*.main-heading {
-  font-size: 2.5rem; /* Large heading 
+.counter.main-heading {
+  font-size: 2.5rem; /* Large heading */
   font-weight: bold;
-  color: #1c060f; /* Dark gray for strong contrast 
+  color: #1c060f; /* Dark gray for strong contrast */
   margin: 0;
-  font-family: "Cinzel Decorative", serif; /* Decorative font for the heading 
-}*/
+  font-family: "Cinzel Decorative", serif; /* Decorative font for the heading */
+}
 
 .sub-heading {
   font-size: 1.2rem; /* Smaller subtitle */
@@ -541,6 +544,7 @@ footer .footer-bottom {
   margin-top: 20px;
   background-color: rgb(255, 255, 255);
   padding: 80px 30px;
+  padding-top:50px;
   box-shadow: 0 0 9px rgba(0, 0, 0, .6);
 }
 .about-item i{
@@ -554,6 +558,7 @@ footer .footer-bottom {
 .about-item h3{
   font-size: 25px;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 .about-item hr{
   width: 46px;

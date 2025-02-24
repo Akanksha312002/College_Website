@@ -147,17 +147,13 @@
   margin-top: 20px;
 }
 /* 🔹 Flexbox layout for sidebar & news */
-.content {
-  display: flex;
-  gap: 20px;
-  padding: 0 20px;
-}
+
 
 /* Sidebar */
 .sidebar {
   margin-right: 40px;
   width: 360px;
-  height:600px;
+  height:900px;
   background: #ffffff;
   padding: 30px;
   border:3px, solid, #303235;

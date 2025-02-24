@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBook, faLightbulb, faTrophy } from "@fortawesome/free-solid-svg-icons";
 import "../../src/Styles/HomePage.css"
 import aboutImage from '../images/HomePage/about.png'; 
 import alumniImage1 from '../images/HomePage/alumini1.jpg';
@@ -35,37 +37,36 @@ const AboutUs = () => {
           <div className="container">
             <div className="row">
               <div className="col-12 text-center">
-              <h2 style={{ fontFamily: 'Croissant One, sans-serif',fontWeight:'bold' }}>
+              <h2 style={{ fontFamily: 'Croissant One, sans-serif',fontWeight:'bolder', fontSize:'50px', marginTop:'50px', marginBottom:'50px'}}>
                 About College
                 </h2>
 
               </div>
               <div className="col-md-4">
                 <div className="about-item text-center">
-                  <i className="fa fa-book"></i>
-                  <h3>Mission</h3>
+                <FontAwesomeIcon icon={faBook} style={{ fontSize: "60px", color: "#1e40af" }} />
+                <h3>Mission</h3>
                   <hr />
                   <ul className="text-left list-disc pl-6">
-                    <li>Deliver quality education aligned with regional, national, and global standards.</li>
-                    <li>Empower underprivileged sections by making education accessible to all.</li>
-                    <li>Promote value-based learning for holistic personality development.</li>
+                    <li>📘 Deliver Quality Education – Provide education aligned with regional, national, and global standards.</li>
+                    <li>🌍 Inclusive Learning – Empower underprivileged sections by making education accessible to all</li>
                   </ul>
                 </div>
               </div>
               <div className="col-md-4">
                 <div className="about-item text-center">
-                  <i className="fa fa-globe"></i>
-                  <h3>Vision</h3>
+                <FontAwesomeIcon icon={faLightbulb} style={{ fontSize: "60px", color: "#FACC15" }} />
+                <h3>Vision</h3>
                   <hr />
-                  <p>Quality education to all, especially the rural, semi-rural, and socio-economically deprived students to make them self-reliant.</p>
+                  <p>🎓 Quality education to all, especially the rural, semi-rural, and socio-economically deprived students to make them self-reliant.</p>
                 </div>
               </div>
               <div className="col-md-4">
                 <div className="about-item text-center">
-                  <i className="fa fa-pencil"></i>
-                  <h3>Achievements</h3>
+                <FontAwesomeIcon icon={faTrophy} style={{ fontSize: "60px", color: "#22C55E" }} />
+                <h3>Achievements</h3>
                   <hr />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo delectus tempore, modi ea aspernatur...</p>
+                  <p>🏆 Our students have consistently excelled in academics, securing top ranks in university exams and prestigious scholarships.</p>
                 </div>
               </div>
             </div>

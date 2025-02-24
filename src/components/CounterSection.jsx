@@ -38,7 +38,7 @@ const CounterSection = () => {
   return (
     <div className="counter-section-container">
       <div className="heading-container">
-        <h1 className="main-heading">By Numbers</h1>
+        <h1 className="counter-main-heading">By Numbers</h1>
         <p className="sub-heading">Our Achievements at a Glance</p>
       </div>
       <div className="counter-section">
