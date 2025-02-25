@@ -1,6 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 
 
+/*NAVBAR CSS*/
+
+/* Main Navbar */
+.main-navbar-div {
+  width: 100%;
+  background-color: #050553;
+  padding: 1px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.main-navbar-div .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.main-navbar-div .logo {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.main-navbar-div .center-text {
+  text-align: center;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+
+.main-navbar-div .nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 3px;
+  background-color: #fffafa;
+  list-style: none;
+}
+
+.main-navbar-div .nav-list li {
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+}
+
+.main-navbar-div .nav-list a {
+  color: rgb(7, 7, 7);
+  text-decoration: none;
+  font-weight: bold;
+}
+.main-navbar-div .nav-list a:hover {
+  color: #050553;
+}
+
+/* Mega Menu Styles */
+.mega-menu {
+  position: absolute;
+  margin-top: 10px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 900px;
+  max-width: none;
+  background-color: #040110;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.mega-menu-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.menu-section h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #efe8ed;
+  margin-bottom: 10px;
+}
+
+.menu-section ul {
+  display: flex;
+  flex-direction: column; /* Forces links to stack */
+  gap: 3px; /* Adds spacing between links */
+  list-style: none;
+  padding: 0;
+}
+
+.menu-section ul li {
+  padding: 8px 0;
+  
+}
+
+.menu-section ul li a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 16px; 
+  transition: 0.3s;
+}
+
+.menu-section ul li a:hover {
+  color: #4da6ff;
+}
+
+
+
 
 
 /* CSS FOR CAMPUS FACILITIES PAGE */
@@ -9,8 +136,6 @@
   width:100%;
   height: 20%;
 }
-
-
 
 .heading{
   color: rgb(18, 1, 1);
@@ -107,6 +232,10 @@
     color: #0a0f69;
 }
 
+
+
+
+
 /* CSS FOR NEWS AND EVENTS PAGE */
 
 .news-page {
@@ -124,8 +253,6 @@
   
   text-align: center;
   color: #f7f8fa;
-  
-  
   margin-left: 50px;
   font-family: "Croissant One", serif;
   font-size: 40px;
@@ -240,65 +367,8 @@
 }
 
 
-/* CSS FOR NAVBAR PAGE */
 
-/* NAVBAR STYLES */
-.main-navbar-div {
-  width: 100%;
-  background-color: #050553;
-  padding: 1px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-.main-navbar-div .navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 5px 0;
-}
 
-.main-navbar-div .logo {
-  width: 80px;
-  height: auto;
-  border-radius: 50%;
-}
-
-.main-navbar-div .center-text {
-  text-align: center;
-  font-family: "Cinzel Decorative", serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1;
-}
-
-.main-navbar-div .nav-list {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 3px;
-  background-color: #fffafa;
-  list-style: none;
-}
-
-.main-navbar-div .nav-list li {
-  display: inline-block;
-  padding: 10px;
-}
-
-.main-navbar-div .nav-list a {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-}
-.main-navbar-div .nav-list a:hover {
-  color: #050553;
-}
 
 /* CSS FOR FOOTER PAGE */
 footer {
@@ -417,8 +487,10 @@ footer .footer-bottom {
 }
 
 
-/* PLACEMENTS PAGE CSS*/
 
+
+
+/* PLACEMENTS PAGE CSS*/
 
 .placements-page {
   font-family: Arial, sans-serif;

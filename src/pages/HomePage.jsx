@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "../../src/Styles/HomePage.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import Carousel from 'react-bootstrap/Carousel';
 import "slick-carousel/slick/slick.css";
@@ -24,7 +26,7 @@ const IndividualIntervalsExample = () => {
       <Carousel.Item interval={2000}>
         <img style={{ height: '90vh' }} className="d-block w-100" src={slide1} alt="First slide" />
         <Carousel.Caption>
-          <div className='slider-content'>
+          <div className='slider-content' data-aos="fade-up">
             <div className='slider-title'>
               <h3>Let's explore our college</h3>
             </div>
@@ -39,7 +41,7 @@ const IndividualIntervalsExample = () => {
       <Carousel.Item interval={2000}>
         <img style={{ height: '90vh' }} className="d-block w-100" src={slide2} alt="Second slide" />
         <Carousel.Caption>
-          <div className='slider-content'>
+          <div className='slider-content' data-aos="fade-up">
             <div className='slider-title'>
               <h3>We are eager to have you</h3>
             </div>
@@ -50,7 +52,7 @@ const IndividualIntervalsExample = () => {
       <Carousel.Item>
         <img style={{ height: '90vh' }} className="d-block w-100" src={slide3} alt="Third slide" />
         <Carousel.Caption>
-          <div className='slider-content'>
+          <div className='slider-content' data-aos="fade-up">
             <div className='slider-title'>
               <h3>We always thrive for your best</h3>
             </div>
@@ -63,6 +65,10 @@ const IndividualIntervalsExample = () => {
 };
 
 const HomePage = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   const location = useLocation();
 
   const settings = {
@@ -100,7 +106,8 @@ const HomePage = () => {
     <div>
       <IndividualIntervalsExample />
       <hr className="section-divider" />
-      <section className="who-we-are">
+
+      <section className="who-we-are" data-aos="fade-right">
         <div className="text">
           <h1>Who We Are?</h1>
           <p>
@@ -112,10 +119,11 @@ const HomePage = () => {
             of Shivaji University, Kolhapur.
           </p>
         </div>
-        <img src={slide1} alt="College" />
+        <img src={slide1} alt="College" data-aos="fade-left" />
       </section>
+
       <section className="features-section">
-        <div className="title-div">
+        <div className="title-div" data-aos="fade-up">
           <h3>The Spirit Of SGM</h3>
           <p>Achieve Your Dreams</p>
         </div>
@@ -123,7 +131,7 @@ const HomePage = () => {
           <div className="row">
             <Slider {...settings}>
               {features.map((feature, index) => (
-                <div key={index} className="col-md-3 card-box-slider">
+                <div key={index} className="col-md-3 card-box-slider" data-aos="zoom-in">
                   <Card className="card1">
                     <Card.Img variant="top" src={feature.img} />
                     <Card.Body>
@@ -140,7 +148,10 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <CounterSection />
+
+      <div data-aos="fade-up">
+        <CounterSection />
+      </div>
     </div>
   );
 };

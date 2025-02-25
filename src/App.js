@@ -15,6 +15,10 @@ import Department from "./pages/Department";
 import VirtualTour from "./pages/VirtualTour";
 import KeyBuildings from "./pages/KeyBuildings";
 import Chat from "./components/Chat";
+import ContactUsPage from "./pages/ContactUsPage";
+import Graduate from "./pages/Graduate";
+import PostGraduate from "./pages/Postgraduate";
+import AddOnCourses from "./pages/Addon";
 
 function App() {
   return (
@@ -30,6 +34,11 @@ function App() {
         <Route path="/department" element={<Department/>}/>
         <Route path="/virtualtour" element={<VirtualTour/>}/>
         <Route path="/buildings" element={<KeyBuildings/>}/>  
+        <Route path="/contactus" element={<ContactUsPage/>}/>  
+        <Route path="/undergraduate" element={<Graduate/>}/>  
+        <Route path="/postgraduate" element={<PostGraduate/>}/>  
+        <Route path="/addon" element={<AddOnCourses/>}/>  
+
 
       </Routes>
       <Chat/>
