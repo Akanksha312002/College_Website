@@ -50,7 +50,7 @@ const NewsAndEventsPage = () => {
   return (
     <div className="news-page">
       {/* Title Section */}
-      <h1 className="main-heading" data-aos="fade-down">
+      <h1 className="main-heading" style={{color:"white"}}data-aos="fade-down">
         COLLEGE DIARIES : NEWS AND UPDATES
       </h1>
       <p className="para" data-aos="fade-up">
