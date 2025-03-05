@@ -13,9 +13,9 @@ import ArtsandHumanities from "../images/Departments/arts.png";
 import Undergraduate from "../images/Departments/Undergraduate.jpg";
 import Postgraduate from "../images/Departments/Postgraduation.jpg";
 import Addon from "../images/Departments/Specialcourses.jpg";
-import PRO_1 from "../images/Departments/PRO-1.png";
-import PRO_2 from "../images/Departments/PRO-2.jpg";
-import PRO_3 from "../images/Departments/PRO-3.jpg";
+import PRO_4 from "../images/Departments/PRO_4.jpg";
+import PRO_5 from "../images/Departments/PRO_5.jpg";
+import PRO_6 from "../images/Departments/PRO_6.jpg";
 
 
 // Department Data
@@ -62,25 +62,25 @@ const courses = [
 // Features Data
 const Faculty = [
   {
-    img: PRO_1,
-    title: "Prof.Dr.Thorat Jayawant Bhimrao",
+    img: PRO_5,
+    title: "Prof.Chavan Archana",
     description: "Professor & Head.",
-    Qualification: " M.Sc., Ph.D.",
-    Experience: "UG: 35 Years, PG: 07 Years",
+    Qualification: " M.Tech, ",
+    Experience: "UG: 15 Years, PG: 05 Years",
   },
   {
-    img: PRO_2,
-    title: "Mrs. Kamble Madhuri Baban",
-    description: "HOD & Assistant Professor",
-    Qualification: "M.Com., M.Phil.",
-    Experience: "UG: 31 years",
+    img: PRO_6,
+    title: "Prof. Suryawanshi Megha",
+    description: " Professor",
+    Qualification: "M.Tech",
+    Experience: "UG: 15 years",
   },
   {
-    img: PRO_3,
-    title: "Dr.Pol Ramesh Pandurang",
-    description: "HOD & Assistant Professor",
-    Qualification: "M.A., M.Phil, Ph.D",
-    Experience: "UG: 31 years",
+    img: PRO_4,
+    title: "Prof. Patil Bhagyashri",
+    description: "Assistant Professor",
+    Qualification: "M.Tech",
+    Experience: "UG: 10 years",
   },
 ];
 
@@ -121,7 +121,7 @@ const Department = () => {
       <div className="department-section container">
         <h2
           className="text-center"
-          style={{ color: "Black", fontSize: "32px", fontWeight: "bold" }}>
+          style={{ color: "Black", fontSize: "35px", fontWeight: "bold", fontFamily:"Georgia, sans-serif", marginBottom:"40px" }}>
           Our Departments
         </h2>
         <div className="row mt-4">
@@ -141,7 +141,7 @@ const Department = () => {
 
       {/* Courses Section */}
       <div className="courses-section container">
-        <h2 className="text-center">Our Variety of Courses</h2>
+        <h2 className="text-center"style={{ color: "Black", fontSize: "35px", fontWeight: "bold", fontFamily:"Georgia, sans-serif", marginBottom:"40px" }}>Our Variety of Courses</h2>
         <div className="row mt-4">
           {courses.map((course, index) => (
             <div className="col-md-4" key={index}>
@@ -180,16 +180,16 @@ const Department = () => {
       <section className="faculty-section">
         <div className="text-center">
           <div id="faculty">
-            <h3>Our Faculty</h3>
-            <p>for SGM</p>
+            <h3  style={{ color: "Black", fontSize: "35px", fontWeight: "bold", fontFamily:"Georgia, sans-serif", marginBottom:"10px" }}>Our Faculty</h3>
+            <h4 style={{marginBottom:"20px"}}>FOR SGM</h4>
           </div>
           <div className="container">
             <div className="row-mt-4">
               <Slider {...settings}>
                 {Faculty.map((faculty, index) => (
                   <div key={index} className="col-md-3 card-box-slider">
-                    <Card className="card1">
-                      <Card.Img variant="top" src={faculty.img} />
+                    <Card className="card1"style={{padding:"20px",textAlign:"center", gap:"5px",marginRight:"25px",alignItems:"center"}}>
+                      <Card.Img variant="top" style={{width:"280px",height:"250px",objectFit:"cover"}} src={faculty.img} />
                       <Card.Body>
                         <Card.Title>{faculty.title}</Card.Title>
                         <Card.Text>

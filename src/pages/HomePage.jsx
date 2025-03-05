@@ -107,24 +107,32 @@ const HomePage = () => {
       <IndividualIntervalsExample />
       <hr className="section-divider" />
 
-      <section className="who-we-are" data-aos="fade-right">
-        <div className="text">
-          <h1>Who We Are?</h1>
-          <p>
-            The college was established in June 1954 with only 54 students in a single Arts Faculty.
-            Over the years, it has flourished to become a multi-faculty institution with 30 departments,
-            numerous support services, and interdisciplinary activities. The campus spans about 6.8 hectares.
-            The total student strength of Senior and Junior College is more than 12,500, with above 400 teaching
-            and non-teaching staff. It is one of the biggest and most well-known multi-faculty colleges in the jurisdiction
-            of Shivaji University, Kolhapur.
-          </p>
+      <section className="who-we-are container" data-aos="slide-right">
+        <div className="row align-items-center">
+          {/* Image on the Left */}
+          <div className="col-md-6" data-aos="fade-right">
+            <img src={slide1} alt="College" className="img-fluid" />
+          </div>
+
+          {/* Text on the Right */}
+          <div className="col-md-6 text" data-aos="fade-right">
+            <h1>Who We Are?</h1>
+            <p>
+              The college was established in June 1954 with only 54 students in a single Arts Faculty.
+              Over the years, it has flourished to become a multi-faculty institution with 30 departments,
+              numerous support services, and interdisciplinary activities. The campus spans about 6.8 hectares.
+              The total student strength of Senior and Junior College is more than 12,500, with above 400 teaching
+              and non-teaching staff. It is one of the biggest and most well-known multi-faculty colleges in the jurisdiction
+              of Shivaji University, Kolhapur.
+            </p>
+          </div>
         </div>
-        <img src={slide1} alt="College" data-aos="fade-left" />
       </section>
+
 
       <section className="features-section">
         <div className="title-div" data-aos="fade-up">
-          <h3>The Spirit Of SGM</h3>
+          <h1>The Spirit Of SGM</h1>
           <p>Achieve Your Dreams</p>
         </div>
         <div className="container">

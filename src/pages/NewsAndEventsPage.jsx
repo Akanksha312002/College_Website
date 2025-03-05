@@ -68,7 +68,7 @@ const NewsAndEventsPage = () => {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <h3>Filter Articles</h3>
+          <h4>Filter Articles</h4>
           <div className="filters">
             {categories.map((category) => (
               <button

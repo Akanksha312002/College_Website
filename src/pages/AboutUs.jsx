@@ -45,7 +45,7 @@ const AboutUs = () => {
           <div className="container">
             <div className="row">
               <div className="col-12 text-center" data-aos="fade-down">
-                <h2 style={{ fontFamily: "Croissant One, sans-serif", fontWeight: "bold" }}>About College</h2>
+                <h2 style={{ fontFamily: "Croissant One, sans-serif", fontWeight: "bold", fontSize:"50px", marginBottom:"40px", marginTop:"30px" }}>About College</h2>
               </div>
               <div className="col-md-4" data-aos="flip-left">
                 <div className="about-item text-center">
@@ -75,8 +75,7 @@ const AboutUs = () => {
                   <h3>Achievements</h3>
                   <hr />
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo delectus tempore, modi ea aspernatur...
-                  </p>
+                  Successfully hosted international seminars, workshops, and cultural festivals with participants from across the globe.                  </p>
                 </div>
               </div>
             </div>

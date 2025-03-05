@@ -289,9 +289,19 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar h2, .sidebar h3 {
+.sidebar h2 {
   color: #2a3f5f;
   font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Croissant One";
+
+}
+.sidebar h4{
+  font-family: "Croissant One";
+  color: #2a3f5f;
+  font-weight:20px;
+  margin-bottom: 30px;
+  margin-top:20px ;
 }
 
 .sidebar input {

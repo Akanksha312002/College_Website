@@ -29,7 +29,7 @@ const MainNavBar = () => {
       <div className="navbar">
         <img src={logoimg} alt="Logo" className="logo" />
         <div className="center-text">
-          <h2>SGM College Karad</h2>
+          <h2 style={{ fontFamily: "Croissant One, sans-serif"}}>SGM COLLEGE KARAD</h2>
           <h6 >Education through self-help is our main motto</h6>
         </div>
         <img src={logo2} alt="Logo 2" className="logo" />
