@@ -77,7 +77,7 @@ const Faculty = [
   },
   {
     img: PRO_4,
-    title: "Prof. Patil Bhagyashri",
+    title: "Prof. Pawar Bhagyashri",
     description: "Assistant Professor",
     Qualification: "M.Tech",
     Experience: "UG: 10 years",

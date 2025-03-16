@@ -61,7 +61,7 @@ const NewsAndEventsPage = () => {
       <div style={{ display: 'flex', gap: '20px', padding: '0 20px', background: 'linear-gradient(to left,#0A1F50,#4A60A1)' }}>
         {/* Sidebar Section */}
         <div className="sidebar" data-aos="fade-right">
-          <h2>News</h2>
+          <h2 style={{fontFamily:"Croissant One.sans-serif "}}>News</h2>
           <input
             type="text"
             placeholder="Keyword Search"

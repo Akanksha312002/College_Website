@@ -5,7 +5,7 @@ import "../Styles/VirtualTour.css";
 import KeyBuildings from './KeyBuildings';
 import video from "../images/CampusFacilities/video2.mp4";
 import CampusFacilites from './CampusFacilites';
-
+import CampusMap from "../images/CampusFacilities/map.jpeg";
 const VirtualTour = () => {
   const [activeSection, setActiveSection] = useState('intro');
 
@@ -85,21 +85,19 @@ const VirtualTour = () => {
               <div style={{
                 width: "80%",
                 maxWidth: "800px",
-                height: "400px",
+                height: "500px",
                 border: "3px solid #000",
                 borderRadius: "10px",
                 overflow: "hidden",
                 boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)"
               }}>
-                <iframe
-                  title="Campus Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.261875035636!2d74.1894353!3d17.302909500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc18222d3b22c5f%3A0xe40dd2974cca6922!2sSadguru%20Gadage%20Maharaj%20College%2C%20Karad!5e0!3m2!1sen!2sin!4v1740404328021!5m2!1sen!2sin"
-                  width="100%"
-                  height="100%"
-                  style={{ border: "none" }}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
+                <img
+                  src={CampusMap}
+                  alt="Campus Map"
+                  style={{ width: "100%", height: "auto", display: "block" }}
+                  data-aos="zoom-in"
+                />
+
               </div>
             </div>
           </div>
