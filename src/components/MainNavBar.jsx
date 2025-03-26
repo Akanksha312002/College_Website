@@ -90,7 +90,7 @@ const MainNavBar = () => {
                 <div className="menu-section">
                   <h4>More</h4>
                   <ul>
-                    <li><Link to="/contact">Contact Us</Link></li>
+                    <li><Link to="/contactus">Contact Us</Link></li>
                     <li><Link to="/faq">FAQ</Link></li>
                     <li><Link to="/footer">Footer Page</Link></li>
                   </ul>
@@ -107,6 +107,7 @@ const MainNavBar = () => {
           { name: "Gallery", path: "/newsevent" },
           { name: "Contact Us", path: "/contactus" },
           { name: "FAQ", path: "/faq" },
+          { name: "Admission", path: "/admission" },
         ].map((item, index) => (
           <li key={index} className="nav-link">
             <Link to={item.path}>{item.name}</Link>

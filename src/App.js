@@ -21,6 +21,12 @@ import ContactUsPage from "./pages/ContactUsPage";
 import Graduate from "./pages/Graduate";
 import PostGraduate from "./pages/Postgraduate";
 import AddOnCourses from "./pages/Addon";
+import FAQPage from "./pages/FAQPage";
+import AdmissionsPage from "./pages/AdmissionsPage";
+import AcademicPage from "./pages/AcademicPage";
+import StudentCorner from "./pages/StudentCorner";
+import Gallery from "./pages/Gallery";
+import ResearchDevelopment from "./pages/ResearchDevelopment";
 
 function App() {
   return (
@@ -40,6 +46,12 @@ function App() {
         <Route path="/undergraduate" element={<Graduate/>}/>  
         <Route path="/postgraduate" element={<PostGraduate/>}/>  
         <Route path="/addon" element={<AddOnCourses/>}/>  
+        <Route path="/faq" element={<FAQPage/>}/>
+        <Route path="/admission" element={<AdmissionsPage/>}/>
+        <Route path="/academic" element={<AcademicPage/>}/>
+        <Route path="/student" element={<StudentCorner/>}/>
+        <Route path="/gallery" element={<Gallery/>}/>
+        <Route path="/r&d" element={<ResearchDevelopment/>}/>
 
 
       </Routes>

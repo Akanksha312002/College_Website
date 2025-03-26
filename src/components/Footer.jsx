@@ -31,13 +31,17 @@ const Footer = () => {
             Quick Links
           </h3>
           <ul className="mt-2 space-y-1">
-     <li><Link to="/services" className="hover:underline transition duration-300">Services</Link></li>
      <li><Link to="/virtualtour" className="hover:underline transition duration-300">Campus</Link></li>
      <li><Link to="/placements" className="hover:underline transition duration-300">Placements</Link></li>
-
     <li><Link to="/about-us" className="hover:underline transition duration-300">About Us</Link></li>
-    <li><Link to="/achievements" className="hover:underline transition duration-300">Achievements</Link></li>
     <li><Link to="/contact-us" className="hover:underline transition duration-300">Contact Us</Link></li>
+    <li><Link to="/student" className="hover:underline transition duration-300">Student Corner</Link></li>
+    <li><Link to="/academic" className="hover:underline transition duration-300">Academics</Link></li>
+    <li><Link to="/gallery" className="hover:underline transition duration-300">Gallery</Link></li>
+    <li><Link to="/r&d" className="hover:underline transition duration-300">Research</Link></li>
+
+
+
    </ul>
         </div>
 

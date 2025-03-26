@@ -1,0 +1,104 @@
+/* General Styles */
+.academic-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    background: url("../images/Academic/student-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 80px 20px 50px; 
+    min-height: 100vh;
+    padding: 80px 20px 50px; /* Adjusted for navbar & footer */
+    text-align: center;
+  }
+  
+  /* Header Section */
+  .header {
+    background-color: #0077b6;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  /* Search Input */
+  .search-input {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Sections */
+  .section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  .section:hover {
+    transform: translateY(-5px);
+  }
+  
+  .section h2 {
+    color: #0077b6;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Section Image */
+  .section-img {
+    display: block;
+    width: 100%; /* Ensures image fills container */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 350px; /* Adjust height as needed */
+    object-fit: contain; /* Prevents cropping, fits the entire image */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: white; /* Prevents unwanted background issues */
+  }
+  
+  /* List Items */
+  
+  
+  
+  /* No Results Message */
+  .no-results {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Placement Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  table th, table td {
+    border: 1px solid #0077b6;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  table th {
+    background-color: #0077b6;
+    color: white;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f0f8ff;
+  }
